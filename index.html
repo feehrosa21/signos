@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3776/3776970.png">
+    <title>Zodíaco</title>
+</head>
+
+<body>
+
+    <main>
+        <h1>Descubra um pouco sobre o seu signo:</h1>
+
+        <input type="text" id="signos" placeholder="Digite seu signo aqui">
+
+        <button onclick="escolhaSigno()">Buscar</button>
+
+        <div id="frase"> </div>
+    </main>
+
+    <script>
+        function escolhaSigno() {
+            var texto
+            var signo = document.querySelector("#signos").value;
+
+            switch (signo) {
+                case "Áries":
+                    texto = "São impaciente, não suportam limites e não costumam se dar bem com ordens e autoridades em geral. Mas a cabeça, é cheia de ideias de transformar o mundo. No entanto seus humores bem como suas explosões, duram pouco. Quase nunca guardam rancor."
+                    document.body.style.backgroundImage = "url(img/aries.png)"
+                    document.body.style.backgroundSize = "cover"
+                    document.body.style.backgroundPosition = "0px -24px"
+                    break; //para avisar o comando que o caso acabou.
+
+                case "Touro":
+                    texto = "São calmos e apegados, mas pisa no calo deles para ver o que acontece. Amam trabalhar, são determinadas, gostam de ter estabilidade em todas as áreas da vida e adoram renovar suas energias mantendo contato com a natureza."
+                    document.body.style.backgroundImage = "url(img/touro.png)"
+                    document.body.style.backgroundSize = "cover"
+                    document.body.style.backgroundPosition = "0px -24px"
+                    break;
+
+                case "Gêmeos":
+                    texto = "Donos da razão e falantes, com essa junção não dá nem para tentar discutir com eles. Mas são pessoas alegres, curiosas e comunicativas."
+                    document.body.style.backgroundImage = "url(img/gemeos.png)"
+                    document.body.style.backgroundSize = "cover"
+                    document.body.style.backgroundPosition = "0px -24px"
+                    break;
+
+                case "Câncer":
+                    texto = "Os cancerianos costumam se apegar aos demais. Eles também são bastante preocupados com seus amigos, família e lar. Entre suas melhores qualidades estão a sensibilidade e o senso de coletividade. No entanto, eles precisam desenvolver a autoconfiança."
+                    document.body.style.backgroundImage = "url(img/cancer.png)"
+                    document.body.style.backgroundSize = "cover"
+                    document.body.style.backgroundPosition = "0px -24px"
+                    break;
+
+                case "Leão":
+                    texto = "Os leoninos exalam carisma e generosidade. São pessoas que se sentem responsáveis pelas pessoas que estão ao seu redor e defende-as como um verdadeiro leão. Os nativos do signo podem agir de maneira explosiva e impulsiva, mas sabem perdoar e dificilmente guardam rancor."
+                    document.body.style.backgroundImage = "url(img/leao.png)"
+                    document.body.style.backgroundSize = "cover"
+                    document.body.style.backgroundPosition = "0px -24px"
+                    break;
+
+                case "Virgem":
+                    texto = "As pessoas do signo de Virgem costumam ser inteligentes, detalhistas, metódicas, organizadas, discretas e perfeccionistas. Se esforçam com tanto esmero que é fácil perceber a sua intenção. Além disso, gosta de aprender fazendo e não costuma desprezar o método de tentativa e erro."
+                    document.body.style.backgroundImage = "url(img/virgem.png)"
+                    document.body.style.backgroundSize = "cover"
+                    document.body.style.backgroundPosition = "0px -24px"
+                    break;
+
+                case "Libra":
+                    texto = "São considerados os mais luxuosos e elegantes do zodíaco. Para eles, é como se a vida fosse uma bela e sofisticada obra de arte. Amam a estética das coisas e desfilam elegância por onde passam. Costumam ser pessoas carismáticas, doces, justas, alegres, bem-humoradas e racionais."
+                    document.body.style.backgroundImage = "url(img/libra.png)"
+                    document.body.style.backgroundSize = "cover"
+                    document.body.style.backgroundPosition = "0px -24px"
+                    break;
+
+                case "Escorpião":
+                    texto = "São reservados, profundos e intensos. São pessoas misteriosas e dificilmente deixam-se acessar por completo. Eles vivem no mundo interior das próprias emoções e são extremamente seletivos ao escolher quem poderá adentrar no seu universo."
+                    document.body.style.backgroundImage = "url(img/escorpiao.png)"
+                    document.body.style.backgroundSize = "cover"
+                    document.body.style.backgroundPosition = "0px -24px"
+                    break;
+                    break;
+
+                case "Sagitário":
+                    texto = "Estão sempre abertos a novas experiências e querendo aprender. Mente aberta e intuitiva, possuem uma personalidade inquieta e mutável. O sagitário é aquela pessoa que gosta de viver e descobrir todas as coisas que o mundo tem a oferecer."
+                    document.body.style.backgroundImage = "url(img/sagitario.png)"
+                    document.body.style.backgroundSize = "cover"
+                    document.body.style.backgroundPosition = "0px -24px"
+                    break;
+
+                case "Capricórnio":
+                    texto = "Obstinados não costumam confiar nos planos feitos por outras pessoas, preferem seguir seus próprios planos. São pessoas pacientes e disciplinadas, pois sabem que a conquista de seus objetivos vem através de muito trabalho e persistência."
+                    document.body.style.backgroundImage = "url(img/capricornio.png)"
+                    document.body.style.backgroundSize = "cover"
+                    document.body.style.backgroundPosition = "0px -24px"
+                    break;
+
+                case "Aquário":
+                    texto = "Pessoas que prezam pela privacidade. Eles não toleram que nada e nem ninguém diga a eles como devem ser ou o que devem fazer. São pessoas criativas e amigavéis  que valorizam acima de tudo a sua independência e originalidade."
+                    document.body.style.backgroundImage = "url(img/aquario.png)"
+                    document.body.style.backgroundSize = "cover"
+                    document.body.style.backgroundPosition = "0px -24px"
+                    break;
+
+                case "Peixes":
+                    texto = "Piscianos costumam ter forte intuição e guiam as ações com base nas emoções. Peixes está ligado a diversas virtudes, são compreensivos, compassivos, empáticos e humildes. Por amor ao próximo, são capazes de se doar totalmente a algum objetivo, esquecendo, às vezes, até de si próprios."
+                    document.body.style.backgroundImage = "url(img/peixes.png)"
+                    document.body.style.backgroundSize = "cover"
+                    document.body.style.backgroundPosition = "0px -24px"
+                    break;
+
+                default:
+                    texto = "Insira um signo existente"
+
+            }
+
+            document.getElementById("frase").innerHTML = texto
+        } 
+    </script>
+
+
+
+    <footer>
+        <p> Zodíaco by Fernanda Rosa&copy;</p>
+        <div class="icons">
+            <a href="https://www.instagram.com/feehrosa21/"><img src="https://cdn-icons-png.flaticon.com/512/3938/3938052.png" alt="icon instagram"
+                    width="40px" height="40px"></a>
+            <a href="https://www.linkedin.com/in/fernanda-rosa21"><img src="https://cdn-icons-png.flaticon.com/512/25/25320.png" alt="icon linkedin"
+                    width="40px" height="40px"></a>
+            <a href="https://github.com/feehrosa21"><img src="https://cdn-icons-png.flaticon.com/512/25/25657.png" alt="icon github" width="40px"
+                    height="40px"></a>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
